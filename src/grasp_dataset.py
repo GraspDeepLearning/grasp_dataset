@@ -58,7 +58,7 @@ class GraspDataset():
         current_index = self.get_current_index()
         if current_index >= current_limit:
             for key in self.config.keys():
-                self.dset[key].resize(current_limit + 250, axis=0)
+                self.dset[key].resize(current_limit + 1, axis=0)
 
         for key in self.config.keys():
             self.dset[key][current_index] = grasp.__getattribute__(key)

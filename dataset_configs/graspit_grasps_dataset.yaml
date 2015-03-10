@@ -11,8 +11,8 @@ joint_values:
     chunk_shape: [50, 8]
 
 virtual_contacts:
-    max_shape: [null, 16 , 3]
-    chunk_shape: [50, 16, 3]
+    max_shape: [null, 4 , 3]
+    chunk_shape: [50, 4, 3]
 
 model_name:
     dtype: String
@@ -23,3 +23,6 @@ energy:
     max_shape: [null, 1]
     chunk_shape: [50, 1]
 
+grasp_type:
+    max_shape: [null, 1]
+    chunk_shape: [50, 1]
